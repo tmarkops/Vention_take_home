@@ -12,13 +12,13 @@ app.use(cors());
 
 // In-memory data store for pendulum parameters and state
 let pendulumParams = {
-  initialAngularOffset: 70,
+  angularOffset: 70,
   mass: 1,
   stringLength: 1,
 };
 
 let pendulumState = {
-  angle: pendulumParams.initialAngularOffset,
+  angle: pendulumParams.angularOffset,
   angularVelocity: 0,
   isPaused : true
 };
@@ -46,22 +46,22 @@ app.get('/pendulum', (req, res) => {
 });
 
 app.post('/pendulum', (req, res) => {
-  const { initialAngularOffset, mass, stringLength, isPaused } = req.body;
+  const { angularOffset, mass, stringLength, isPaused } = req.body;
 
-  if (typeof initialAngularOffset !== 'number' || typeof mass !== 'number' || typeof stringLength !== 'number' || typeof isPaused != 'boolean') {
+  if (typeof angularOffset !== 'number' || typeof mass !== 'number' || typeof stringLength !== 'number' || typeof isPaused != 'boolean') {
     res.status(400).json({ error: 'Invalid parameters.' });
     return;
   }
 
   // update current pendulum parameters and state
   pendulumParams = {
-    initialAngularOffset,
+    angularOffset,
     mass,
     stringLength
   };
 
   pendulumState = {
-    angle: initialAngularOffset,
+    angle: angularOffset,
     angularVelocity: 0,
     isPaused: isPaused
   };

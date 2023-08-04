@@ -105,7 +105,7 @@ function controlAnimation(apiUrl, curPenId) {
         const sliderAngleValue = -parseFloat(document.getElementById(`angle${curPenId}`).value);
 
         const requestBody = {
-            initialAngularOffset: parseFloat(currentAngle),
+            angularOffset: parseFloat(currentAngle),
             mass,
             stringLength: stringLength / 15, // scaleing the stringLength in pixels to have faster swinging => better UX
             isPaused: isPaused
