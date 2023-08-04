@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.pendulum-container {
+    width: 100%;
+    height: 100vh; /* Use viewport height (100vh) to fill the entire screen height */
+    position: relative;
+    /* margin: 0 auto; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.ind-pendulum-container {
+    width: 200px;
+    height: 100%; /* Take up the full height of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-top: auto; /* Push the container to the bottom */
+    border-top: solid;
+    border-color: black;
+    border-width: 10px;
+}
+
+.pendulum {
+    width: 2px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    top: 0;
+    transform-origin: 50% 0;
+    margin: 0 auto; /* Add this line to center horizontally */
+    margin-bottom: 150px;
+}
+
+.control-panel {
+    position: absolute;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+.ball {
+    width: 25px; /* Initial width */
+    height: 25px; /* Initial height */
+    background-color: #ff0000;
+    border-radius: 50%;
+    --ball-height: 25px; /* Default height */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pendulum1 {
+    background-color: red;
+}
+.ball1 {
+    background-color: red;;
+}
+.pendulum2 {
+    background-color: blue;
+}
+.ball2 {
+    background-color: blue;;
+}
+
+.pendulum3 {
+    background-color: fuchsia;
+}
+.ball3 {
+    background-color: fuchsia;;
+}
+
+.pendulum4 {
+    background-color: green;
+}
+.ball4 {
+    background-color: green;;
+}
+
+.pendulum5 {
+    background-color: cyan;
+}
+.ball5 {
+    background-color: cyan;
+}
+
+
+
+
+
+
+input,
+button,
+label {
+    display: block;
+    margin: 10px auto;
+}
+
+button {
+    padding: 5px 10px;
+}

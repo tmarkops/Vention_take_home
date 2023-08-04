@@ -1,0 +1,17 @@
+{
+  "name": "vention_take_home",
+  "version": "1.0.0",
+  "description": "Take home exercise for intern application to Vention.",
+  "main": "startCluster.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "node startCluster.js"
+  },
+  "author": "Tommy Markopoulos",
+  "license": "MIT"
+}
