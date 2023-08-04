@@ -21,21 +21,25 @@ The server periodically updates the pendulum's state using the Euler method. The
 <br>
 <strong>GET /pendulum:</strong>
 
-Description: Retrieves the current state of the pendulum.<br>
-Response:<br>
+<ul>
+<li>Description: Retrieves the current state of the pendulum.<br></li>
+<li>Response:<br>
 angle: Current angle (in degrees) of the pendulum from the vertical position.<br>
 angularVelocity: Current angular velocity (in degrees per second) of the pendulum.<br>
-isPaused: A boolean indicating whether the pendulum simulation is paused or not.<br>
+isPaused: A boolean indicating whether the pendulum simulation is paused or not.<br><li>
+<ul>
 
 <strong>POST /pendulum:</strong> 
 <br>
-Description: Sets the parameters for the pendulum simulation and initializes its state.<br>
-Request Body:<br>
+<ul>
+<li>Description: Sets the parameters for the pendulum simulation and initializes its state.<br></li>
+<li>Request Body:<br>
 initialAngularOffset: Initial angle (in degrees) from the vertical position for the pendulum.<br>
 mass: Mass (in kg) of the pendulum's bob.<br>
 stringLength: Length (in meters) of the pendulum's string.<br>
 isPaused: A boolean indicating whether the pendulum simulation should be paused.<br>
-Response: A message indicating the successful setting of pendulum parameters.
+Response: A message indicating the successful setting of pendulum parameters.</li>
+</ul>
 
 <h1>Usage</h1>
 To run the Pendulum Simulator Server, execute the following commands:<br>
