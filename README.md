@@ -26,8 +26,8 @@ The server periodically updates the pendulum's state using the Euler method. The
 <li>Response:<br>
 angle: Current angle (in degrees) of the pendulum from the vertical position.<br>
 angularVelocity: Current angular velocity (in degrees per second) of the pendulum.<br>
-isPaused: A boolean indicating whether the pendulum simulation is paused or not.<br><li>
-<ul>
+isPaused: A boolean indicating whether the pendulum simulation is paused or not.<br></li>
+</ul>
 
 <strong>POST /pendulum:</strong> 
 <br>
