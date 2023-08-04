@@ -15,26 +15,26 @@ Each worker process runs an isolated instance of the pendulum server, handling i
 The server maintains an in-memory data store to keep track of the pendulum's parameters and state. The initial parameters are set to a default configuration and can be modified through API endpoints.
 
 <h3>Simulation and Motion Update</h3>
-The server periodically updates the pendulum's state using the Euler method for numerical integration. The simulation takes place every 100ms, and the motion update occurs only when the pendulum is not paused.
+The server periodically updates the pendulum's state using the Euler method. The simulation takes place every 100ms, and the motion update occurs only when the pendulum is not paused.
 
 <h1>Endpoints</h1>
 <br>
 <strong>GET /pendulum:</strong>
 
-Description: Retrieves the current state of the pendulum.
-Response:
-angle: Current angle (in degrees) of the pendulum from the vertical position.
-angularVelocity: Current angular velocity (in degrees per second) of the pendulum.
-isPaused: A boolean indicating whether the pendulum simulation is paused or not.
+Description: Retrieves the current state of the pendulum.<br>
+Response:<br>
+angle: Current angle (in degrees) of the pendulum from the vertical position.<br>
+angularVelocity: Current angular velocity (in degrees per second) of the pendulum.<br>
+isPaused: A boolean indicating whether the pendulum simulation is paused or not.<br>
 
 <strong>POST /pendulum:</strong> 
 <br>
-Description: Sets the parameters for the pendulum simulation and initializes its state.
-Request Body:
-initialAngularOffset: Initial angle (in degrees) from the vertical position for the pendulum.
-mass: Mass (in kg) of the pendulum's bob.
-stringLength: Length (in meters) of the pendulum's string.
-isPaused: A boolean indicating whether the pendulum simulation should be paused.
+Description: Sets the parameters for the pendulum simulation and initializes its state.<br>
+Request Body:<br>
+initialAngularOffset: Initial angle (in degrees) from the vertical position for the pendulum.<br>
+mass: Mass (in kg) of the pendulum's bob.<br>
+stringLength: Length (in meters) of the pendulum's string.<br>
+isPaused: A boolean indicating whether the pendulum simulation should be paused.<br>
 Response: A message indicating the successful setting of pendulum parameters.
 
 <h1>Usage</h1>
