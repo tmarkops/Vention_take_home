@@ -34,7 +34,7 @@ isPaused: A boolean indicating whether the pendulum simulation is paused or not.
 <ul>
 <li>Description: Sets the parameters for the pendulum simulation and initializes its state.<br></li>
 <li>Request Body:<br>
-initialAngularOffset: Initial angle (in degrees) from the vertical position for the pendulum.<br>
+angularOffset: Initial angle (in degrees) from the vertical position for the pendulum.<br>
 mass: Mass (in kg) of the pendulum's bob.<br>
 stringLength: Length (in meters) of the pendulum's string.<br>
 isPaused: A boolean indicating whether the pendulum simulation should be paused.<br>
