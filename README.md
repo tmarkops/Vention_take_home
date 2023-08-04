@@ -38,7 +38,7 @@ angularOffset: Initial angle (in degrees) from the vertical position for the pen
 mass: Mass (in kg) of the pendulum's bob.<br>
 stringLength: Length (in meters) of the pendulum's string.<br>
 isPaused: A boolean indicating whether the pendulum simulation should be paused.<br>
-Response: A message indicating the successful setting of pendulum parameters.</li>
+<li>Response: A message indicating the successful setting of pendulum parameters.</li></li>
 </ul>
 
 <h1>Usage</h1>
